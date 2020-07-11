@@ -12,7 +12,7 @@ const TripHeader = ({ trip }) => {
         <div ref={holderRef} style={holderStyles}>
           <div
             style={
-              isFixed ? { ...wrapperStyles, marginTop: -189 } : wrapperStyles
+              isFixed ? { ...wrapperStyles, marginTop: -191 } : wrapperStyles
             }
             ref={wrapperRef}
           >
