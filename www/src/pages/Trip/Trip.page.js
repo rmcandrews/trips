@@ -6,13 +6,15 @@ import { useParams } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 import TripHeader from "./components/TripHeader";
+import EventItem from "./components/EventItem/EventItem.component";
 
 const TripPage = () => {
   let history = useHistory();
   let { id } = useParams();
   const trip = data.trips.find((trip) => trip.id === id);
-
-  console.log(trip);
+  const eventItems = trip.events.map((event) => (
+    <EventItem event={event} key={event.id} />
+  ));
 
   return (
     <>
@@ -20,7 +22,7 @@ const TripPage = () => {
         <FontAwesomeIcon icon="arrow-left" />
       </button>
       <TripHeader trip={trip} />
-      <div style={{ height: 1000 }}></div>
+      <ul className={styles.eventList}>{eventItems}</ul>
     </>
   );
 };

@@ -1,0 +1,10 @@
+.iconContainer {
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  color: white;
+  text-align: center;
+  background-color: gray;
+  font-size: 0.75rem;
+  line-height: 24px;
+}

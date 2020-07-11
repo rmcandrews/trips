@@ -13,9 +13,25 @@ import {
   faBed,
   faTrain,
   faArrowLeft,
+  faPlaneDeparture,
+  faPlaneArrival,
+  faChevronDown,
+  faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(fab, faPlane, faCar, faUtensils, faBed, faTrain, faArrowLeft);
+library.add(
+  fab,
+  faPlane,
+  faCar,
+  faUtensils,
+  faBed,
+  faTrain,
+  faArrowLeft,
+  faPlaneDeparture,
+  faPlaneArrival,
+  faChevronDown,
+  faChevronUp
+);
 
 ReactDOM.render(
   <React.StrictMode>

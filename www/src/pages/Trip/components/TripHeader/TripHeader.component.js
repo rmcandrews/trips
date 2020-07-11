@@ -11,6 +11,7 @@ const TripHeader = ({ trip }) => {
       {({ isFixed, wrapperStyles, wrapperRef, holderStyles, holderRef }) => (
         <div ref={holderRef} style={holderStyles}>
           <div
+            className={isFixed ? styles.shadow : undefined}
             style={
               isFixed ? { ...wrapperStyles, marginTop: -190 } : wrapperStyles
             }

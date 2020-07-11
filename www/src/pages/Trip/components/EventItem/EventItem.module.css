@@ -1,0 +1,24 @@
+.eventItem {
+  display: flex;
+}
+
+.timeline {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  justify-content: center;
+  min-width: 24px;
+  padding: 0 24px 0 16px;
+}
+
+.icon {
+  color: #5f6368;
+  display: flex;
+  margin: 4px;
+}
+
+.line {
+  border-left: 1px solid #dadce0;
+  flex: 1 0;
+}

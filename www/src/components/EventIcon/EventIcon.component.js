@@ -5,6 +5,9 @@ const typeIcons = {
   FLIGHT: {
     name: "plane",
     rotation: 270,
+    secondary: {
+      name: "plane-departure",
+    },
   },
   "RENTAL CAR": {
     name: "car",
@@ -18,10 +21,11 @@ const typeIcons = {
   },
 };
 
-const EventIcon = ({ type, subType }) => {
+const EventIcon = ({ type, subType, secondary }) => {
   let typeIcon;
   if (subType && typeIcons[subType]) typeIcon = typeIcons[subType];
   else typeIcon = typeIcons[type];
+  if (typeIcon.secondary) typeIcon = typeIcon.secondary;
   return (
     <FontAwesomeIcon
       icon={typeIcon.name}

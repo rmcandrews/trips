@@ -22,3 +22,9 @@
 .backButton:hover {
   color: #d1d1d1;
 }
+
+.eventList {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}

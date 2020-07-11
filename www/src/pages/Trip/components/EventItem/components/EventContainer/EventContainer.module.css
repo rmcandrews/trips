@@ -1,0 +1,63 @@
+.overviewContainer {
+  flex: auto;
+  padding-bottom: 1.5rem;
+  min-width: 200px;
+}
+
+.dates {
+  margin: 2px 0;
+}
+
+.eventCard {
+  margin: 0.5rem 1rem 0 0;
+  perspective: none;
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  overflow: hidden;
+}
+
+.eventHeader {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  outline: none;
+}
+
+.eventCardArrow {
+  margin: 0 1rem;
+  color: #5f6368;
+  display: inline-block;
+}
+
+.eventCardSummary {
+  align-items: center;
+  display: flex;
+  padding: 0.75rem 0;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  flex: none;
+  height: 40px;
+  justify-content: center;
+  padding: 0 0.75rem;
+  width: 40px;
+}
+
+.eventDetails {
+  max-height: 0px;
+  transition: max-height 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.eventDetails.visible {
+  max-height: 388px;
+  overflow: visible;
+}
