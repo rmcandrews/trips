@@ -42,7 +42,7 @@ const TripCard = ({ trip }) => {
   const endDate = new Date(trip.endTimestamp * 1000);
   return (
     <li>
-      <Link to={`/trips/${trip.id}`} style={{ textDecoration: "none" }}>
+      <Link to={`/${trip.id}`} style={{ textDecoration: "none" }}>
         <div
           className={styles.container}
           style={{ backgroundImage: `url("${trip.image}")` }}
