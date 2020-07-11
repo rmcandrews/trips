@@ -1,0 +1,24 @@
+.backButton {
+  position: fixed;
+  color: white;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.backButton:hover,
+.backButton:focus {
+  background: transparent;
+}
+
+.backButton:focus {
+  outline: none;
+}
+
+.backButton:hover {
+  color: #d1d1d1;
+}

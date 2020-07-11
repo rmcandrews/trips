@@ -1,0 +1,51 @@
+.container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 15rem;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.25);
+  background-blend-mode: multiply;
+}
+
+.main {
+  color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.dates {
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scrolledTitleContainer {
+  height: 50px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  transition: 0.5s;
+  color: white;
+  padding-left: 4rem;
+}
+
+.scrolledTitleContainer .date {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.scrolledTitleContainer .title {
+  font-size: 1rem;
+}
