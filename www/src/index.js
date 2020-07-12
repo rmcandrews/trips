@@ -17,6 +17,7 @@ import {
   faPlaneArrival,
   faChevronDown,
   faChevronUp,
+  faGolfBall,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -30,7 +31,8 @@ library.add(
   faPlaneDeparture,
   faPlaneArrival,
   faChevronDown,
-  faChevronUp
+  faChevronUp,
+  faGolfBall
 );
 
 ReactDOM.render(

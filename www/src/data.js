@@ -15,6 +15,7 @@ export const EVENT_SUBTYPES = {
   CAMPGROUND: "CAMP GROUND",
   RENTAL: "RENTAL",
   RESTAURANT: "RESTAURANT",
+  GOLF: "GOLF",
 };
 
 export default {
@@ -85,6 +86,10 @@ export default {
           timezone: "America/Denver",
           endTimestamp: 1595692800,
           confirmationCode: "LH20052817970141",
+          location: {
+            city: "Bozeman",
+            state: "MT",
+          },
         },
         {
           id: "3",
@@ -95,6 +100,10 @@ export default {
           timezone: "America/Denver",
           endTimestamp: 1595779200,
           confirmationCode: "RMDLU3QUH",
+          location: {
+            city: "West Yellowstone",
+            state: "MT",
+          },
         },
         {
           id: "4",
@@ -144,6 +153,77 @@ export default {
         {
           id: "5",
           type: EVENT_TYPES.TRANSPORTATION,
+          subType: EVENT_SUBTYPES.RENTAL_CAR,
+          company: "Alamo",
+          startTimestamp: 1595823780,
+          timezone: "America/Los_Angeles",
+          endTimestamp: 1596427200,
+          pickUp: {
+            timestamp: 1595823780,
+            location: "PORTLAND (PDX)",
+            timezone: "America/Los_Angeles",
+          },
+          dropOff: {
+            timestamp: 1596427200,
+            location: "PORTLAND (PDX)",
+            timezone: "America/Los_Angeles",
+          },
+          confirmationCode: "7532928340176",
+        },
+        {
+          id: "6",
+          type: EVENT_TYPES.LODGING,
+          subType: EVENT_SUBTYPES.HOTEL,
+          company: "Hilton Garden Inn Eugene/Springfield",
+          startTimestamp: 1595808000,
+          timezone: "America/Los_Angeles",
+          endTimestamp: 1595869200,
+          location: {
+            city: "Eugene",
+            state: "OR",
+          },
+        },
+        {
+          id: "7",
+          type: EVENT_TYPES.LODGING,
+          subType: EVENT_SUBTYPES.RENTAL,
+          company: "Spindrift Oceanfront",
+          startTimestamp: 1595890800,
+          timezone: "America/Los_Angeles",
+          endTimestamp: 1596387600,
+          confirmationCode: "GW1Q-NXSY",
+          location: {
+            city: "Bandon",
+            state: "OR",
+          },
+        },
+        {
+          id: "8",
+          type: EVENT_TYPES.ACTIVITY,
+          subType: EVENT_SUBTYPES.GOLF,
+          company: "Pacific Dunes",
+          startTimestamp: 1595916600,
+          timezone: "America/Los_Angeles",
+          location: {
+            city: "Bandon",
+            state: "OR",
+          },
+        },
+        {
+          id: "9",
+          type: EVENT_TYPES.ACTIVITY,
+          subType: EVENT_SUBTYPES.GOLF,
+          company: "Sheep Ranch",
+          startTimestamp: 1596091800,
+          timezone: "America/Los_Angeles",
+          location: {
+            city: "Bandon",
+            state: "OR",
+          },
+        },
+        {
+          id: "10",
+          type: EVENT_TYPES.TRANSPORTATION,
           subType: EVENT_SUBTYPES.FLIGHT,
           company: "Alaska Airlines",
           confirmationCode: "CBYCYV",
@@ -171,7 +251,7 @@ export default {
               flightNumber: "22",
               departure: {
                 timestamp: 1596435300,
-                city: "Seatlle",
+                city: "Seattle",
                 state: "WA",
                 airportCode: "SEA",
                 timezone: "America/Los_Angeles",

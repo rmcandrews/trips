@@ -22,8 +22,9 @@ const EventIcons = ({ events }) => {
     numDining = 0,
     numLodging = 0;
   events.forEach((event) => {
-    if (event.subType === "FLIGHT") numFlights++;
-    else if (event.subType === "RENTAL CAR") numRentalCars++;
+    if (event.subType === "FLIGHT") {
+      numFlights += event.segments.length;
+    } else if (event.subType === "RENTAL CAR") numRentalCars++;
     else if (event.type === "DINING") numDining++;
     else if (event.type === "LODGING") numLodging++;
   });

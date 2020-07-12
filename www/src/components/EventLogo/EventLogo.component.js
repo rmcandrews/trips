@@ -20,6 +20,10 @@ const typeIcons = {
     name: "bed",
     backgroundColor: "#8430CE",
   },
+  GOLF: {
+    name: "golf-ball",
+    backgroundColor: "#188038",
+  },
 };
 
 const companyLogos = {

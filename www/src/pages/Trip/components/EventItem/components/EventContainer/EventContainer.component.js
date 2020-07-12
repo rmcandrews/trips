@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styles from "./EventContainer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import EventLogo from "../../../../../../components/EventLogo";
+import EventTitle from "./EventTitle.component";
+import EventWeather from "./EventWeather.component";
 import moment from "moment-timezone";
 
 const dateFormat = "ddd, MMM D";
@@ -39,6 +41,7 @@ const EventContainer = ({ event }) => {
               <div className={styles.logo}>
                 <EventLogo event={event} />
               </div>
+              <EventTitle event={event} isOpen={isOpen} />
             </div>
           </span>
           <span className={styles.eventCardArrow}>
