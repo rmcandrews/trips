@@ -20,6 +20,10 @@ const typeIcons = {
     name: "bed",
     backgroundColor: "#8430CE",
   },
+  ACTIVITY: {
+    name: "star",
+    backgroundColor: "#F29A00",
+  },
   GOLF: {
     name: "golf-ball",
     backgroundColor: "#188038",

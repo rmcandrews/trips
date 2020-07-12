@@ -200,12 +200,11 @@ export default {
         {
           id: "8",
           type: EVENT_TYPES.ACTIVITY,
-          subType: EVENT_SUBTYPES.GOLF,
-          company: "Pacific Dunes",
-          startTimestamp: 1595916600,
+          company: "Kayaking",
+          startTimestamp: 1596123000,
           timezone: "America/Los_Angeles",
           location: {
-            city: "Bandon",
+            city: "Coos Bay",
             state: "OR",
           },
         },
@@ -213,8 +212,8 @@ export default {
           id: "9",
           type: EVENT_TYPES.ACTIVITY,
           subType: EVENT_SUBTYPES.GOLF,
-          company: "Sheep Ranch",
-          startTimestamp: 1596091800,
+          company: "Pacific Dunes",
+          startTimestamp: 1595959800,
           timezone: "America/Los_Angeles",
           location: {
             city: "Bandon",
@@ -223,6 +222,29 @@ export default {
         },
         {
           id: "10",
+          type: EVENT_TYPES.ACTIVITY,
+          subType: EVENT_SUBTYPES.GOLF,
+          company: "Sheep Ranch",
+          startTimestamp: 1596135000,
+          timezone: "America/Los_Angeles",
+          location: {
+            city: "Bandon",
+            state: "OR",
+          },
+        },
+        {
+          id: "11",
+          type: EVENT_TYPES.ACTIVITY,
+          company: "Whitewater Rafting",
+          startTimestamp: 1596214800,
+          timezone: "America/Los_Angeles",
+          location: {
+            city: "Eagle Point",
+            state: "OR",
+          },
+        },
+        {
+          id: "12",
           type: EVENT_TYPES.TRANSPORTATION,
           subType: EVENT_SUBTYPES.FLIGHT,
           company: "Alaska Airlines",

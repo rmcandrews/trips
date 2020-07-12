@@ -19,6 +19,9 @@ const typeIcons = {
   LODGING: {
     name: "bed",
   },
+  ACTIVITY: {
+    name: "star",
+  },
   GOLF: {
     name: "golf-ball",
   },

@@ -57,9 +57,11 @@ const buildTitle = (event) => {
       switch (event.subType) {
         case "GOLF":
           title = event.company;
-          details = moment(event.startTimestamp * 1000)
-            .tz(event.timezone)
-            .format("h:mm A");
+          details =
+            "Tee time: " +
+            moment(event.startTimestamp * 1000)
+              .tz(event.timezone)
+              .format("h:mm A");
           break;
         default:
           title = event.company;
