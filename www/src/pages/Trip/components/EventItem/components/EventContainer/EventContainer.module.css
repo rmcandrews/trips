@@ -85,3 +85,54 @@
   color: #5f6368;
   line-height: 0.75rem;
 }
+
+.iframeContainer {
+  background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="350px" viewBox="0 0 100% 100%"><text fill="%44444400" x="50%" y="50%" font-family="\'Google Sans\', sans-serif" font-size="24" text-anchor="middle">LOADING</text></svg>')
+    0px 0px no-repeat;
+}
+
+.iframeContainer iframe {
+  border: none;
+  width: 100%;
+  height: 480px;
+}
+
+.detailsContainer {
+  margin: 0 1rem;
+}
+
+.detailsRow {
+  padding: 0.5rem 0;
+  display: flex;
+  max-width: 400px;
+}
+
+.detail {
+  margin: 0 0.1rem;
+  flex: auto;
+}
+
+.detailTitle {
+  font: 400 12px/16px Roboto, Arial, sans-serif;
+  letter-spacing: 0.3px;
+  color: #5f6368;
+}
+
+.detailDetail {
+  font: 400 14px/20px Roboto, Arial, sans-serif;
+  letter-spacing: 0.2px;
+  color: #5f6368;
+}
+
+.flightSegment {
+  align-items: center;
+  display: flex;
+  max-width: 180px;
+  padding: 0.5rem 0 0;
+}
+
+.airportCode {
+  font: 500 16px/24px "Google Sans", Roboto, Arial, sans-serif;
+  letter-spacing: 0.1px;
+  color: #3c4043;
+}

@@ -24,6 +24,10 @@ const typeIcons = {
     name: "star",
     backgroundColor: "#F29A00",
   },
+  MAP: {
+    name: "map-marked-alt",
+    backgroundColor: "#03A9F4",
+  },
   GOLF: {
     name: "golf-ball",
     backgroundColor: "#188038",

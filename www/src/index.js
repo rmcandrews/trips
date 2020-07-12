@@ -19,6 +19,7 @@ import {
   faChevronUp,
   faGolfBall,
   faStar,
+  faMapMarkedAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -34,7 +35,8 @@ library.add(
   faChevronDown,
   faChevronUp,
   faGolfBall,
-  faStar
+  faStar,
+  faMapMarkedAlt
 );
 
 ReactDOM.render(

@@ -22,6 +22,9 @@ const typeIcons = {
   ACTIVITY: {
     name: "star",
   },
+  MAP: {
+    name: "map-marked-alt",
+  },
   GOLF: {
     name: "golf-ball",
   },

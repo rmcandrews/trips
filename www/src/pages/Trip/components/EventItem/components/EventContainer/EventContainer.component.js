@@ -3,6 +3,7 @@ import styles from "./EventContainer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import EventLogo from "../../../../../../components/EventLogo";
 import EventTitle from "./EventTitle.component";
+import EventDetails from "./EventDetails.component";
 import EventWeather from "./EventWeather.component";
 import moment from "moment-timezone";
 
@@ -51,7 +52,7 @@ const EventContainer = ({ event }) => {
         <div
           className={`${styles.eventDetails} ${isOpen ? styles.visible : ""}`}
         >
-          <div style={{ height: 300 }}></div>
+          <EventDetails event={event} isOpen={isOpen} />
         </div>
       </div>
     </div>

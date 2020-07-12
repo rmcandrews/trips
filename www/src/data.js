@@ -3,6 +3,7 @@ export const EVENT_TYPES = {
   LODGING: "LODGING",
   DINING: "DINING",
   ACTIVITY: "ACTIVITY",
+  MAP: "MAP",
 };
 
 export const EVENT_SUBTYPES = {
@@ -88,6 +89,20 @@ export default {
           confirmationCode: "LH20052817970141",
           location: {
             city: "Bozeman",
+            state: "MT",
+          },
+        },
+        {
+          id: "2.1",
+          type: EVENT_TYPES.MAP,
+          company: "Yellowstone Activities",
+          startTimestamp: 1595523600,
+          timezone: "America/Denver",
+          endTimestamp: 1595721600,
+          url:
+            "https://www.google.com/maps/d/u/0/embed?mid=1ML-Sg_KE9wRN3gbrTDhbeofYtcEOgjI1",
+          location: {
+            city: "West Yellowstone",
             state: "MT",
           },
         },
