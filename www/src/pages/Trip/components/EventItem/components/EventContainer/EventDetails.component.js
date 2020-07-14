@@ -182,8 +182,7 @@ const buildDetails = (event) => {
   }
 };
 
-const EventDetails = ({ event, isOpen }) => {
-  if (!isOpen) return null;
+const EventDetails = ({ event }) => {
   return buildDetails(event);
 };
 

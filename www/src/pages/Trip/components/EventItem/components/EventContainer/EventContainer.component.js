@@ -52,7 +52,7 @@ const EventContainer = ({ event }) => {
         <div
           className={`${styles.eventDetails} ${isOpen ? styles.visible : ""}`}
         >
-          <EventDetails event={event} isOpen={isOpen} />
+          <EventDetails event={event} />
         </div>
       </div>
     </div>

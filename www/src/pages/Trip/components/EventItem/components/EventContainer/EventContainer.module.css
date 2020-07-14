@@ -59,7 +59,6 @@
 
 .eventDetails.visible {
   max-height: 388px;
-  overflow: visible;
 }
 
 .eventTitleContainer {
