@@ -92,6 +92,65 @@ const RentalCarDetails = ({ event }) => {
   );
 };
 
+const LodgingDetails = ({ event }) => {
+  let { location } = event;
+  return (
+    <div className={styles.detailsContainer}>
+      <div className={styles.detailsRow}>
+        <div className={styles.detail}>
+          <div className={styles.detailTitle}>Check In Time</div>
+          <div className={styles.detailDetail}>
+            {moment(event.startTimestamp * 1000)
+              .tz(event.timezone)
+              .format("h:mm A")}
+          </div>
+        </div>
+      </div>
+      {location && location.streetAddress && (
+        <div className={styles.detailsRow}>
+          <div className={styles.detail}>
+            <div className={styles.detailTitle}>Address</div>
+            <div className={styles.detailDetail}>
+              <a
+                className={styles.link}
+                target="blank"
+                rel="noopener"
+                href={`https://www.google.com/maps/place/${location.streetAddress},+${location.city},+${location.state}`}
+              >{`${location.streetAddress}, ${location.city}, ${location.state}`}</a>
+            </div>
+          </div>
+        </div>
+      )}
+      {event.confirmationCode && (
+        <div className={styles.detailsRow}>
+          <div className={styles.detail}>
+            <div className={styles.detailTitle}>Confirmation Code</div>
+            <div className={styles.detailDetail}>{event.confirmationCode}</div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+const DefaultDetails = ({ event }) => {
+  return (
+    <div className={styles.detailsContainer}>
+      <div className={styles.wideDetailsRow}>
+        <div className={styles.detail}>
+          <div
+            className={styles.detailTitle}
+            style={{ paddingBottom: "0.5rem" }}
+          >
+            Details
+          </div>
+          <div className={styles.detailDetail}>{event.details}</div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const buildDetails = (event) => {
   switch (event.type) {
     case "MAP":
@@ -110,16 +169,16 @@ const buildDetails = (event) => {
           return event.type;
       }
     case "LODGING":
-      return "LODGING IN PROGRESS";
+      return <LodgingDetails event={event} />;
     case "ACTIVITY":
       switch (event.subType) {
         case "GOLF":
-          return "GOLF IN PROGRESS";
+          return <DefaultDetails event={event} />;
         default:
-          return "ACTIVITY IN PROGRESS";
+          return <DefaultDetails event={event} />;
       }
     default:
-      return "DEFAULT IN PROGRESS";
+      return <DefaultDetails event={event} />;
   }
 };
 

@@ -136,3 +136,16 @@
   letter-spacing: 0.1px;
   color: #3c4043;
 }
+
+.link {
+  text-decoration: none;
+  color: #2962ff;
+  cursor: pointer;
+  font: 400 14px/20px Roboto, Arial, sans-serif;
+  letter-spacing: 0.2px;
+}
+
+.wideDetailsRow {
+  padding: 0.5rem 0;
+  display: flex;
+}

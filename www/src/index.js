@@ -20,6 +20,7 @@ import {
   faGolfBall,
   faStar,
   faMapMarkedAlt,
+  faCloudSun,
 } from "@fortawesome/free-solid-svg-icons";
 
 library.add(
@@ -36,7 +37,8 @@ library.add(
   faChevronUp,
   faGolfBall,
   faStar,
-  faMapMarkedAlt
+  faMapMarkedAlt,
+  faCloudSun
 );
 
 ReactDOM.render(

@@ -34,7 +34,7 @@
 .scrolledTitleContainer {
   height: 50px;
   position: absolute;
-  width: 100%;
+  width: calc(100% - 4rem);
   bottom: 0;
   transition: 0.5s;
   color: white;
@@ -48,9 +48,50 @@
 
 .scrolledTitleContainer .title {
   font-size: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .shadow {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
     0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+.mobileHeaderContainer {
+  width: 100%;
+}
+
+.mobileTitleContainer {
+  max-width: calc(100% - 4.5rem);
+  display: inline-block;
+}
+
+.mobileWeatherButton {
+  float: right;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobileWeatherButton:hover {
+  color: #d1d1d1;
+}
+
+.detailsButton {
+  background: #fff;
+  border-radius: 1.5rem;
+  font-size: 0.75rem;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.25px;
+  color: #3c4043;
+  border: 1px solid white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.detailsButton:hover {
+  background-color: transparent;
+  color: white;
 }

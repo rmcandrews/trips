@@ -26,8 +26,8 @@ export default {
       image:
         "https://www.lodgeatbigsky.com/resourcefiles/attractionsmallimages/yellowstone-national-park-montana.jpg",
       id: "0",
-      startTimestamp: 1595430300,
-      endTimestamp: 1596492300,
+      startTimestamp: 1595430300 - 60,
+      endTimestamp: 1596492300 - 240,
       events: [
         {
           id: "0",
@@ -35,20 +35,20 @@ export default {
           subType: EVENT_SUBTYPES.FLIGHT,
           company: "American Airlines",
           confirmationCode: "YHHAJO",
-          startTimestamp: 1595430300,
+          startTimestamp: 1595430300 - 60,
           timezone: "America/Chicago",
           segments: [
             {
               flightNumber: "2297",
               departure: {
-                timestamp: 1595430300,
+                timestamp: 1595430300 - 60,
                 city: "Chicago",
                 state: "IL",
                 airportCode: "ORD",
                 timezone: "America/Chicago",
               },
               arrival: {
-                timestamp: 1595442600,
+                timestamp: 1595442600 - 240,
                 city: "Bozeman",
                 state: "MT",
                 airportCode: "BZN",
@@ -88,8 +88,9 @@ export default {
           endTimestamp: 1595692800,
           confirmationCode: "LH20052817970141",
           location: {
-            city: "Bozeman",
+            city: "Gardiner",
             state: "MT",
+            streetAddress: "206 Main St",
           },
         },
         {
@@ -118,6 +119,7 @@ export default {
           location: {
             city: "West Yellowstone",
             state: "MT",
+            streetAddress: "890 Buttermilk Creek Road",
           },
         },
         {
@@ -169,21 +171,36 @@ export default {
           id: "5",
           type: EVENT_TYPES.TRANSPORTATION,
           subType: EVENT_SUBTYPES.RENTAL_CAR,
-          company: "Alamo",
-          startTimestamp: 1595823780,
+          company: "Enterprise",
+          carType: "Mini Van",
+          startTimestamp: 1595820600,
           timezone: "America/Los_Angeles",
           endTimestamp: 1596427200,
           pickUp: {
-            timestamp: 1595823780,
+            timestamp: 1595820600,
             location: "PORTLAND (PDX)",
             timezone: "America/Los_Angeles",
           },
           dropOff: {
-            timestamp: 1596427200,
+            timestamp: 1596423600,
             location: "PORTLAND (PDX)",
             timezone: "America/Los_Angeles",
           },
-          confirmationCode: "7532928340176",
+          confirmationCode: "1319429065",
+        },
+        {
+          id: "7.1",
+          type: EVENT_TYPES.MAP,
+          company: "Oregon Map",
+          startTimestamp: 1595820600,
+          timezone: "America/Denver",
+          endTimestamp: 1596423600,
+          url:
+            "https://www.google.com/maps/d/u/0/embed?mid=1StyR8OIVmTHHex4zUwShrFgcSnc7To3Q",
+          location: {
+            city: "Bandon",
+            state: "OR",
+          },
         },
         {
           id: "6",
@@ -196,6 +213,7 @@ export default {
           location: {
             city: "Eugene",
             state: "OR",
+            streetAddress: "3528 Gateway St",
           },
         },
         {
@@ -210,12 +228,14 @@ export default {
           location: {
             city: "Bandon",
             state: "OR",
+            streetAddress: "2990 Beach Loop Road",
           },
         },
         {
           id: "8",
           type: EVENT_TYPES.ACTIVITY,
-          company: "Kayaking",
+          company: "South Coast Tours Kayaking",
+          details: "8:30am - 11:00am • 2 Single Kayaks, 2 Tandem Kayaks",
           startTimestamp: 1596123000,
           timezone: "America/Los_Angeles",
           location: {
@@ -228,6 +248,7 @@ export default {
           type: EVENT_TYPES.ACTIVITY,
           subType: EVENT_SUBTYPES.GOLF,
           company: "Pacific Dunes",
+          details: "4 golfers",
           startTimestamp: 1595959800,
           timezone: "America/Los_Angeles",
           location: {
@@ -240,6 +261,7 @@ export default {
           type: EVENT_TYPES.ACTIVITY,
           subType: EVENT_SUBTYPES.GOLF,
           company: "Sheep Ranch",
+          details: "6 golfers",
           startTimestamp: 1596135000,
           timezone: "America/Los_Angeles",
           location: {
@@ -251,6 +273,8 @@ export default {
           id: "11",
           type: EVENT_TYPES.ACTIVITY,
           company: "Whitewater Rafting",
+          details:
+            "Meet at the Gold Hill Post Office 375 2nd Ave, Gold Hill, OR 97525 in the parking lot at 10 AM.",
           startTimestamp: 1596214800,
           timezone: "America/Los_Angeles",
           location: {

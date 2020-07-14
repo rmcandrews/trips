@@ -41,6 +41,8 @@ const companyLogos = {
     "https://www.gstatic.com/flights/airline_logos/70px/AS.png",
   National:
     "https://lh3.googleusercontent.com/6gL89Z-xGEnxneYGUF-QFcecMo-_nhV0idlMcTrfEUVDe_qYA1T26hzGcbSWsuxlHO4",
+  Enterprise:
+    "https://lh3.googleusercontent.com/SkZ_0N5KVeNSpYWvgUPhKPrbHa4o504S6XHsOVNcyaZQuRVds5Pk-3qAus5g-FQfnQk=s360-rw",
 };
 
 const EventLogo = ({ event }) => {

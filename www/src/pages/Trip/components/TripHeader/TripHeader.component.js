@@ -1,5 +1,6 @@
 import React from "react";
 import { RenderPropSticky } from "react-sticky-el";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./TripHeader.module.css";
 import { getDayName, getMonthName } from "../../../../utils/date.utils";
 
@@ -28,16 +29,26 @@ const TripHeader = ({ trip }) => {
                   {getMonthName(endDate)} {endDate.getDate()}
                 </div>
                 <div className={styles.title}>{trip.title}</div>
+                <div className={styles.detailsButton} role="button">
+                  Weather Report
+                </div>
               </div>
               <div
                 className={styles.scrolledTitleContainer}
                 style={{ opacity: isFixed ? 1 : 0 }}
               >
-                <div className={styles.date}>
-                  {getMonthName(startDate)} {startDate.getDate()} –{" "}
-                  {getMonthName(endDate)} {endDate.getDate()}
+                <div className={styles.mobileHeaderContainer}>
+                  <div className={styles.mobileTitleContainer}>
+                    <div className={styles.date}>
+                      {getMonthName(startDate)} {startDate.getDate()} –{" "}
+                      {getMonthName(endDate)} {endDate.getDate()}
+                    </div>
+                    <div className={styles.title}>{trip.title}</div>
+                  </div>
+                  <div className={styles.mobileWeatherButton} role="button">
+                    <FontAwesomeIcon icon="cloud-sun" />
+                  </div>
                 </div>
-                <div className={styles.title}>{trip.title}</div>
               </div>
             </header>
           </div>
