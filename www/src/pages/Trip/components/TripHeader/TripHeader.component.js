@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./TripHeader.module.css";
 import { getDayName, getMonthName } from "../../../../utils/date.utils";
 
-const TripHeader = ({ trip }) => {
+const TripHeader = ({ trip, onWeatherClick }) => {
   const startDate = new Date(trip.startTimestamp * 1000);
   const endDate = new Date(trip.endTimestamp * 1000);
   return (
@@ -29,7 +29,11 @@ const TripHeader = ({ trip }) => {
                   {getMonthName(endDate)} {endDate.getDate()}
                 </div>
                 <div className={styles.title}>{trip.title}</div>
-                <div className={styles.detailsButton} role="button">
+                <div
+                  className={styles.detailsButton}
+                  role="button"
+                  onClick={onWeatherClick}
+                >
                   Weather Report
                 </div>
               </div>
@@ -45,7 +49,11 @@ const TripHeader = ({ trip }) => {
                     </div>
                     <div className={styles.title}>{trip.title}</div>
                   </div>
-                  <div className={styles.mobileWeatherButton} role="button">
+                  <div
+                    className={styles.mobileWeatherButton}
+                    role="button"
+                    onClick={onWeatherClick}
+                  >
                     <FontAwesomeIcon icon="cloud-sun" />
                   </div>
                 </div>

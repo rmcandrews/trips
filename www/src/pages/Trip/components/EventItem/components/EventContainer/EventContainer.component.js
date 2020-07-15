@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import EventLogo from "../../../../../../components/EventLogo";
 import EventTitle from "./EventTitle.component";
 import EventDetails from "./EventDetails.component";
-import EventWeather from "./EventWeather.component";
 import moment from "moment-timezone";
 
 const dateFormat = "ddd, MMM D";
