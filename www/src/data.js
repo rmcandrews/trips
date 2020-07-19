@@ -270,6 +270,19 @@ export default {
           },
         },
         {
+          id: "10.1",
+          type: EVENT_TYPES.DINING,
+          subType: EVENT_SUBTYPES.RESTAURANT,
+          company: "Pacific Grill @ Bandon Dunes",
+          details: "Reservation for 13",
+          startTimestamp: 1596153600,
+          timezone: "America/Los_Angeles",
+          location: {
+            city: "Bandon",
+            state: "OR",
+          },
+        },
+        {
           id: "11",
           type: EVENT_TYPES.ACTIVITY,
           company: "Whitewater Rafting",

@@ -70,6 +70,12 @@ const buildTitle = (event) => {
             .format("h:mm A");
       }
       break;
+    case "DINING":
+      title = event.company;
+      details = moment(event.startTimestamp * 1000)
+        .tz(event.timezone)
+        .format("h:mm A");
+      break;
     default:
       title = event.company;
       break;
