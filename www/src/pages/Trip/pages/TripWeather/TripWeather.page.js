@@ -140,6 +140,7 @@ const TripWeatherPage = ({ trip, onCloseClick, isOpen }) => {
           let weather;
           citiesWeather.forEach((cityWeather) => {
             if (
+              cityWeather &&
               cityWeather.city_name === city &&
               cityWeather.state_code === state
             ) {
