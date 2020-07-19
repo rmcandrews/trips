@@ -33,6 +33,11 @@ const typeIcons = {
     name: "golf-ball",
     backgroundColor: "#188038",
   },
+  HIKE: {
+    name: "hiking",
+    backgroundColor: "#188038",
+    marginLeft: -1,
+  },
 };
 
 const companyLogos = {
@@ -65,7 +70,10 @@ const EventLogo = ({ event }) => {
     return (
       <div
         className={styles.iconContainer}
-        style={{ backgroundColor: typeIcon.backgroundColor }}
+        style={{
+          backgroundColor: typeIcon.backgroundColor,
+          marginLeft: typeIcon.marginLeft,
+        }}
       >
         <FontAwesomeIcon icon={typeIcon.name} rotation={typeIcon.rotation} />
       </div>

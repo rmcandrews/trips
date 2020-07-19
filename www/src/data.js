@@ -17,6 +17,7 @@ export const EVENT_SUBTYPES = {
   RENTAL: "RENTAL",
   RESTAURANT: "RESTAURANT",
   GOLF: "GOLF",
+  HIKE: "HIKE",
 };
 
 export default {
@@ -120,6 +121,34 @@ export default {
             city: "West Yellowstone",
             state: "MT",
             streetAddress: "890 Buttermilk Creek Road",
+          },
+        },
+        {
+          id: "3.1",
+          type: EVENT_TYPES.DINING,
+          subType: EVENT_SUBTYPES.RESTAURANT,
+          company: "Big Sky Brewing",
+          details: "No reservations",
+          startTimestamp: 1595790000,
+          timezone: "America/Los_Angeles",
+          location: {
+            city: "Missoula",
+            state: "MT",
+            streetAddress: "5417 Trumpeter Way",
+          },
+        },
+        {
+          id: "3.2",
+          type: EVENT_TYPES.ACTIVITY,
+          subType: EVENT_SUBTYPES.HIKE,
+          company: "Big Sky Chairlifts",
+          details: "Ride the chairlifts and hike Big Sky",
+          startTimestamp: 1595797200,
+          timezone: "America/Los_Angeles",
+          location: {
+            city: "Big Sky",
+            state: "MT",
+            streetAddress: "50 Big Sky Resort Road",
           },
         },
         {
@@ -237,6 +266,19 @@ export default {
           subType: EVENT_SUBTYPES.GOLF,
           company: "Pacific Dunes",
           details: "4 golfers",
+          startTimestamp: 1595959800,
+          timezone: "America/Los_Angeles",
+          location: {
+            city: "Bandon",
+            state: "OR",
+          },
+        },
+        {
+          id: "9.1",
+          type: EVENT_TYPES.ACTIVITY,
+          subType: EVENT_SUBTYPES.HIKE,
+          company: "Girls Hike",
+          details: "Everyone not golfing goes hiking",
           startTimestamp: 1595959800,
           timezone: "America/Los_Angeles",
           location: {

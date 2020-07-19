@@ -28,6 +28,9 @@ const typeIcons = {
   GOLF: {
     name: "golf-ball",
   },
+  HIKE: {
+    name: "hiking",
+  },
 };
 
 const EventIcon = ({ type, subType, secondary }) => {
