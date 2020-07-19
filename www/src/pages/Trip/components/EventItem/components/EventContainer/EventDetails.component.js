@@ -134,6 +134,7 @@ const LodgingDetails = ({ event }) => {
 };
 
 const DefaultDetails = ({ event }) => {
+  const { location } = event;
   return (
     <div className={styles.detailsContainer}>
       <div className={styles.wideDetailsRow}>
@@ -147,6 +148,21 @@ const DefaultDetails = ({ event }) => {
           <div className={styles.detailDetail}>{event.details}</div>
         </div>
       </div>
+      {location && location.streetAddress && (
+        <div className={styles.detailsRow}>
+          <div className={styles.detail}>
+            <div className={styles.detailTitle}>Address</div>
+            <div className={styles.detailDetail}>
+              <a
+                className={styles.link}
+                target="blank"
+                rel="noopener"
+                href={`https://www.google.com/maps/place/${location.streetAddress},+${location.city},+${location.state}`}
+              >{`${location.streetAddress}, ${location.city}, ${location.state}`}</a>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

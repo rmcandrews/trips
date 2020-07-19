@@ -280,6 +280,7 @@ export default {
           location: {
             city: "Bandon",
             state: "OR",
+            streetAddress: "57744 Round Lake Rd",
           },
         },
         {
@@ -293,6 +294,21 @@ export default {
           location: {
             city: "Eagle Point",
             state: "OR",
+          },
+        },
+        {
+          id: "11.1",
+          type: EVENT_TYPES.DINING,
+          subType: EVENT_SUBTYPES.RESTAURANT,
+          company: "Taprock Northwest Grill",
+          details: "No reservations",
+          reservation: false,
+          startTimestamp: 1596238200,
+          timezone: "America/Los_Angeles",
+          location: {
+            city: "Bandon",
+            state: "OR",
+            streetAddress: "971 SE 6th St",
           },
         },
         {
