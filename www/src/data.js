@@ -206,14 +206,14 @@ export default {
           id: "6",
           type: EVENT_TYPES.LODGING,
           subType: EVENT_SUBTYPES.HOTEL,
-          company: "Hilton Garden Inn Eugene/Springfield",
+          company: "Home2 Suites by Hilton Eugene Downtown University Area",
           startTimestamp: 1595808000,
           timezone: "America/Los_Angeles",
           endTimestamp: 1595869200,
           location: {
             city: "Eugene",
             state: "OR",
-            streetAddress: "3528 Gateway St",
+            streetAddress: "102 West 11th Avenue",
           },
         },
         {
