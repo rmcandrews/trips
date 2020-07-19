@@ -7,7 +7,7 @@ const FightDetails = ({ event }) => {
   const flightItems = event.segments.map((segment) => {
     let { departure, arrival } = segment;
     return (
-      <div>
+      <div key={departure.airportCode}>
         <div className={styles.flightSegment}>
           <span className={styles.airportCode}>{departure.airportCode}</span>
           <span

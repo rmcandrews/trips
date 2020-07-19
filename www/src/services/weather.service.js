@@ -20,11 +20,8 @@
 //   return data;
 // };
 
-export const getWeather = async ({ city, startTimestamp, endTimestamp }) => {
+export const getWeather = async (city) => {
   const now = new Date().getTime() / 1000;
-  if (now > endTimestamp || now + 15 * 86400 < startTimestamp) {
-    return { isOutOfRange: true };
-  }
   const day = Math.floor(now / 86400);
   const weatherCacheKey = `weatherbit-${city}-${day}`;
   const weatherCache = localStorage.getItem(weatherCacheKey);
