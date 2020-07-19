@@ -306,7 +306,7 @@ export default {
           startTimestamp: 1596238200,
           timezone: "America/Los_Angeles",
           location: {
-            city: "Bandon",
+            city: "Grants Pass",
             state: "OR",
             streetAddress: "971 SE 6th St",
           },
