@@ -232,18 +232,6 @@ export default {
           },
         },
         {
-          id: "8",
-          type: EVENT_TYPES.ACTIVITY,
-          company: "South Coast Tours Kayaking",
-          details: "8:30am - 11:00am • 2 Single Kayaks, 2 Tandem Kayaks",
-          startTimestamp: 1596123000,
-          timezone: "America/Los_Angeles",
-          location: {
-            city: "Coos Bay",
-            state: "OR",
-          },
-        },
-        {
           id: "9",
           type: EVENT_TYPES.ACTIVITY,
           subType: EVENT_SUBTYPES.GOLF,
@@ -253,6 +241,18 @@ export default {
           timezone: "America/Los_Angeles",
           location: {
             city: "Bandon",
+            state: "OR",
+          },
+        },
+        {
+          id: "8",
+          type: EVENT_TYPES.ACTIVITY,
+          company: "South Coast Tours Kayaking",
+          details: "8:30am - 11:00am • 2 Single Kayaks, 2 Tandem Kayaks",
+          startTimestamp: 1596123000,
+          timezone: "America/Los_Angeles",
+          location: {
+            city: "Coos Bay",
             state: "OR",
           },
         },
